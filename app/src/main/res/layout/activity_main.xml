@@ -19,30 +19,30 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="#ff8a65"
+            android:background="@color/coral"
             android:gravity="center"
-            android:text="This is an orange TextView"
-            android:textColor="#ffffff"
+            android:text="@string/orange_text_view"
+            android:textColor="@color/white"
             android:textSize="20sp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="#cdedd7"
+            android:background="@color/light_green"
             android:gravity="center"
-            android:text="This is a green TextView"
-            android:textColor="#000000"
+            android:text="@string/green_text_view"
+            android:textColor="@color/black"
             android:textSize="20sp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="#80ccc4"
+            android:background="@color/bermuda"
             android:gravity="center"
-            android:text="This is a blue TextView"
-            android:textColor="#ffffff"
+            android:text="@string/blue_text_view"
+            android:textColor="@color/white"
             android:textSize="20sp" />
     </LinearLayout>
 
@@ -58,9 +58,9 @@
             android:layout_height="match_parent"
             android:layout_margin="7dp"
             android:layout_weight="1"
-            android:background="#80ccc4"
-            android:text="THIS IS A BUTTON"
-            android:textColor="#000000">
+            android:background="@color/bermuda"
+            android:text="@string/a_button"
+            android:textColor="@color/black">
 
         </android.widget.Button>
 
@@ -79,9 +79,9 @@
             android:layout_height="match_parent"
             android:layout_margin="7dp"
             android:layout_weight="1"
-            android:background="#a5d6a7"
-            android:text="THIS IS A GREEN BUTTON"
-            android:textColor="#000000">
+            android:background="@color/moss_green"
+            android:text="@string/a_green_button"
+            android:textColor="@color/black">
 
         </android.widget.Button>
     </LinearLayout>
@@ -90,19 +90,19 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1.3"
-        android:background="#ffb74d"
+        android:background="@color/dark_yellow"
         android:gravity="center"
         android:orientation="vertical">
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="This is an EditText" />
+            android:hint="@string/edit_text" />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="This is a new EditText" />
+            android:hint="@string/new_edit_text" />
 
     </LinearLayout>
 
@@ -110,7 +110,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:background="#7bccc6"
+        android:background="@color/bermuda"
         android:orientation="vertical">
 
         <LinearLayout
@@ -123,17 +123,17 @@
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="right"
+                android:layout_gravity="end"
                 android:layout_weight="1"
-                android:text="Notify me :)"
+                android:text="@string/notify_me"
                 android:textSize="20sp" />
 
             <Switch
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_gravity="left"
+                android:layout_gravity="start"
                 android:layout_weight="1"
-                android:text="Auto backup"
+                android:text="@string/auto_backup"
                 android:textSize="20sp"
                 tools:ignore="UseSwitchCompatOrMaterialXml" />
 
@@ -142,22 +142,23 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="#78909c" />
+            android:background="@color/bermuda_gray" />
 
         <RatingBar
             style="@android:style/Widget.Holo.RatingBar.Small"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
+            android:isIndicator="false"
             android:numStars="5"
-            android:progressTint="#e91e63"
+            android:progressTint="@color/ruby"
             android:rating="4"
             android:stepSize="1" />
 
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="#78909c" />
+            android:background="@color/bermuda_gray" />
 
         <RadioGroup
             android:layout_width="wrap_content"
@@ -167,7 +168,7 @@
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="30dp"
-                android:text="YES"
+                android:text="@string/yes"
                 android:textSize="20sp">
 
             </RadioButton>
@@ -175,7 +176,7 @@
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="30dp"
-                android:text="NO"
+                android:text="@string/no"
                 android:textSize="20sp">
 
             </RadioButton>

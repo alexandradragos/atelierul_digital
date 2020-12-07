@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Week2_code_challenge</string>
+    <string name="orange_text_view">This is an orange TextView</string>
+    <string name="green_text_view">This is a green TextView</string>
+    <string name="blue_text_view">This is a blue TextView</string>
+    <string name="a_button">This is a button</string>
+    <string name="a_green_button">This is a green button</string>
+    <string name="edit_text">This is an EditText</string>
+    <string name="new_edit_text">This is a new EditText</string>
+    <string name="notify_me">Notify me :)</string>
+    <string name="auto_backup">Auto backup</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
 </resources>
