@@ -10,40 +10,40 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        tools:context=".MainActivity">
+        tools:context=".RelativeLayoutActivity">
 
         <View
             android:id="@+id/yellow_view"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_width="@dimen/square_width"
+            android:layout_height="@dimen/square_height"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:layout_margin="20dp"
+            android:layout_margin="@dimen/square_layout_margin"
             android:background="@color/dark_yellow" />
 
         <View
             android:id="@+id/bermuda_view"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_width="@dimen/square_width"
+            android:layout_height="@dimen/square_height"
             android:layout_alignParentTop="true"
-            android:layout_marginLeft="70dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginLeft="@dimen/square_margin_left"
+            android:layout_marginTop="@dimen/square_margin_top"
             android:layout_toEndOf="@id/yellow_view"
             android:background="@color/bermuda" />
 
         <View
             android:id="@+id/dark_bermuda_view"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_marginTop="20dp"
+            android:layout_width="@dimen/square_width"
+            android:layout_height="@dimen/square_height"
+            android:layout_marginTop="@dimen/square_margin_top"
             android:layout_toEndOf="@+id/bermuda_view"
             android:background="@color/bermuda_gray" />
 
         <View
             android:id="@+id/coral_view"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_margin="20dp"
+            android:layout_width="@dimen/square_width"
+            android:layout_height="@dimen/square_height"
+            android:layout_margin="@dimen/square_layout_margin"
             android:layout_toEndOf="@+id/dark_bermuda_view"
             android:background="@color/coral" />
 
@@ -52,7 +52,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/coral_view"
-            android:layout_margin="20dp"
+            android:layout_margin="@dimen/text_view_scroll_description_margin"
             android:text="@string/scroll_view_description" />
 
         <TextView
@@ -60,7 +60,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/text_view_1"
-            android:layout_margin="20dp"
+            android:layout_margin="@dimen/text_view_scroll_description_margin"
             android:text="@string/scroll_view_description" />
 
         <TextView
@@ -68,7 +68,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/text_view_2"
-            android:layout_margin="20dp"
+            android:layout_margin="@dimen/text_view_scroll_description_margin"
             android:text="@string/scroll_view_description" />
 
         <TextView
@@ -76,7 +76,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/text_view_3"
-            android:layout_margin="20dp"
+            android:layout_margin="@dimen/text_view_scroll_description_margin"
             android:text="@string/scroll_view_description" />
 
         <TextView
@@ -84,7 +84,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/text_view_4"
-            android:layout_margin="20dp"
+            android:layout_margin="@dimen/text_view_scroll_description_margin"
             android:text="@string/scroll_view_description" />
 
     </RelativeLayout>
