@@ -1,50 +1,91 @@
-<?xml version="1.0" encoding="utf-8"?><!--<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"-->
-<!--    android:layout_width="match_parent"-->
-<!--    android:layout_height="match_parent"-->
-<!--    android:fillViewport="true">-->
-
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
+    android:fillViewport="true">
 
-    <View
-        android:id="@+id/yellow_view"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_margin="20dp"
-        android:background="@color/dark_yellow" />
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
 
-    <View
-        android:id="@+id/bermuda_view"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_alignParentTop="true"
-        android:layout_toEndOf="@id/yellow_view"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="70dp"
-        android:background="@color/bermuda" />
+        <View
+            android:id="@+id/yellow_view"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="20dp"
+            android:background="@color/dark_yellow" />
 
-    <View
-        android:id="@+id/dark_bermuda_view"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_toEndOf="@+id/bermuda_view"
-        android:layout_marginTop="20dp"
-        android:background="@color/bermuda_gray" />
+        <View
+            android:id="@+id/bermuda_view"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@id/yellow_view"
+            android:background="@color/bermuda" />
 
-    <View
-        android:id="@+id/coral_view"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_toEndOf="@+id/dark_bermuda_view"
-        android:layout_margin="20dp"
-        android:background="@color/coral" />
+        <View
+            android:id="@+id/dark_bermuda_view"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@+id/bermuda_view"
+            android:background="@color/bermuda_gray" />
 
+        <View
+            android:id="@+id/coral_view"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="20dp"
+            android:layout_toEndOf="@+id/dark_bermuda_view"
+            android:background="@color/coral" />
 
-</RelativeLayout><!--</ScrollView>-->
+        <TextView
+            android:id="@+id/text_view_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/coral_view"
+            android:layout_margin="20dp"
+            android:text="@string/scroll_view_description" />
+
+        <TextView
+            android:id="@+id/text_view_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_view_1"
+            android:layout_margin="20dp"
+            android:text="@string/scroll_view_description" />
+
+        <TextView
+            android:id="@+id/text_view_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_view_2"
+            android:layout_margin="20dp"
+            android:text="@string/scroll_view_description" />
+
+        <TextView
+            android:id="@+id/text_view_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_view_3"
+            android:layout_margin="20dp"
+            android:text="@string/scroll_view_description" />
+
+        <TextView
+            android:id="@+id/text_view_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_view_4"
+            android:layout_margin="20dp"
+            android:text="@string/scroll_view_description" />
+
+    </RelativeLayout>
+</ScrollView>
