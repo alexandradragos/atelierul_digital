@@ -1,4 +1,0 @@
-com/example/week2_code_challenge/MainActivity.java
- com.example.week2_code_challenge.MainActivity
-com/example/week2_code_challenge/BuildConfig.java
- com.example.week2_code_challenge.BuildConfig
