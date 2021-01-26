@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="8dp"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="4dp"
+    android:layout_marginBottom="20dp"
+    app:cardUseCompatPadding="true"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <CheckBox
+            android:id="@+id/taskCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/colorPrimaryDark"
+            android:paddingStart="8dp" />
+
+        <TextView
+            android:id="@+id/taskContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/taskCheckBox"
+            android:background="@android:color/transparent"
+            android:padding="5dp"
+            android:text="This is a mock task"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+        <!--   android:background="@android:color/transparent" removes the underline of EditText     -->
+
+        <TextView
+            android:id="@+id/dateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/taskCheckBox"
+            android:layout_margin="16dp"
+            android:textColor="@color/purple_700"
+            android:text="Here will be the date when the task was created" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
